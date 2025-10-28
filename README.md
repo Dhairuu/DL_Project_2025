@@ -16,12 +16,12 @@ This project implements a three-layer Neural Network for handwritten digit recog
 
 ## Network Architecture
 
-| Layer   | Type   | Size       | Activation | Initialization   |
-|---------|--------|------------|------------|------------------|
-| Layer 1 | Input  | 784 (28x28)| None       | N/A              |
-| Layer 2 | Hidden | 128        | ReLU       | He Initialization|
-| Layer 3 | Hidden | 128        | ReLU       | He Initialization|
-| Layer 4 | Output | 10         | Softmax    | He Initialization|
+| Layer   | Type   | Size       | Activation | 
+|---------|--------|------------|------------|
+| Layer 1 | Input  | 784 (28x28)| None       |
+| Layer 2 | Hidden | 128        | ReLU       | 
+| Layer 3 | Hidden | 64        | ReLU       | 
+| Layer 4 | Output | 10         | Softmax    |
 
 ---
 
@@ -73,10 +73,6 @@ python LivePredict.py
 - Application downscales input to `28x28`, runs the model, and predicts the digit[file:1].
 
 ---
-
-## License
-
-[Add your license information here]
 
 ---
 
