@@ -28,3 +28,52 @@ This project implements a three-layer Neural Network for handwritten digit recog
 ## Prerequisites
 
 Install required libraries:
+`pip install pandas numpy Pillow matplotlib`
+
+
+You'll need the `train.csv` and `test.csv` files from the official Kaggle MNIST competition for training and validation[file:1].
+
+---
+
+## Project Files
+
+| File             | Description                                                                                     |
+|------------------|------------------------------------------------------------------------------------------------|
+| Training.py      | Script to train the network (data loading, network, training loop, save parameters)             |
+| Testing.py       | Script to load trained parameters and test model accuracy on `test.csv`                         |
+| Utils.py         | Core logic (layer classes, activation functions, one-hot encoding, forward/backward propagation)|
+| LivePredict.py   | Tkinter/PIL GUI for drawing and live prediction                                                 |
+| parameters.json  | Stores trained weights (W) and biases (B) for layers 2, 3, and 4                               |
+
+---
+
+## Usage
+
+### Step 1: Train the Model
+
+Before testing or using live prediction, train the model and generate parameters:
+
+`python Testing.py`
+
+
+### Step 3: Live Digit Recognition
+
+Start the interactive drawing application:
+
+`python LivePredict.py`
+
+- A `1000x1000` canvas window will open.
+- Draw any digit (0–9), then click **Predict**[file:1].
+- Application downscales input to `28x28`, runs the model, and predicts the digit[file:1].
+
+---
+
+## License
+
+[Add your license information here]
+
+---
+
+## Contributing
+
+Pull requests and suggestions are welcome! Please open an issue to discuss major changes[file:1].
