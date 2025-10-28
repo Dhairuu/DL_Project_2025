@@ -56,6 +56,13 @@ You'll need the `train.csv` and `test.csv` files from the official Kaggle MNIST 
 Before testing or using live prediction, train the model and generate parameters:
 
 ```
+python Training.py
+```
+### Step 2: Testing with the Test Dataset
+
+TO check the model's accuracy on the provided test.csv dataset and visualize a prediction:
+
+```
 python Testing.py
 ```
 
@@ -73,9 +80,3 @@ python LivePredict.py
 - Application downscales input to `28x28`, runs the model, and predicts the digit[file:1].
 
 ---
-
----
-
-## Contributing
-
-Pull requests and suggestions are welcome! Please open an issue to discuss major changes[file:1].
