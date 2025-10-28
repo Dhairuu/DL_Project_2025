@@ -28,7 +28,9 @@ This project implements a three-layer Neural Network for handwritten digit recog
 ## Prerequisites
 
 Install required libraries:
-`pip install pandas numpy Pillow matplotlib`
+```
+pip install pandas numpy Pillow matplotlib
+```
 
 
 You'll need the `train.csv` and `test.csv` files from the official Kaggle MNIST competition for training and validation[file:1].
@@ -53,14 +55,18 @@ You'll need the `train.csv` and `test.csv` files from the official Kaggle MNIST 
 
 Before testing or using live prediction, train the model and generate parameters:
 
-`python Testing.py`
+```
+python Testing.py
+```
 
 
 ### Step 3: Live Digit Recognition
 
 Start the interactive drawing application:
 
-`python LivePredict.py`
+```
+python LivePredict.py
+```
 
 - A `1000x1000` canvas window will open.
 - Draw any digit (0–9), then click **Predict**[file:1].
